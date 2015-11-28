@@ -1,0 +1,96 @@
+@import "base";
+@import "tile";
+@import "nav";
+
+%extend_disable_glow {
+    box-shadow: none!important;
+    outline: 0 none!important;
+    border-color: $primary_color!important;
+}
+
+%extend_hover_transition {
+    -webkit-transition: all 0.3s ease-in-out;
+       -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out; 
+}
+
+body {
+    font-family: $primary_font;
+    font-size: 1.1rem;
+    font-weight: 400;
+    background: $primary_color;
+}
+
+.modal-content {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+}
+
+.view-content-container {
+    margin-top: 150px;
+}
+
+.input-group-addon, 
+.form-control, 
+.modal-content,
+.btn {
+    border-radius: 0;
+}
+
+.ng-invalid {
+    border-color: $error_color;
+}
+
+.team-sizer {
+    margin: 20px;
+    font-size: 1.5rem;
+    width: 200px;
+}
+
+.draft-container {
+    padding: 20px;
+}
+
+.round-heading {
+    width: 400px;
+    font-size: 1.5rem;
+    color: $secondary_color;
+    border-bottom: 1px solid $secondary_color;
+}
+
+.btn {
+    outline: none !important;
+}
+
+.nhl-team-logo-container {
+    padding: 6px 7px;
+
+    > .nhl-team-logo {
+        width: 24px;
+        height: 16px;
+    }
+}
+
+.truncate {
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+select {
+    padding-right: 10px!important;
+    &:focus {
+        @extend %extend_disable_glow;
+    }
+}
+
+textarea:focus,
+input[type]:focus {
+    @extend %extend_disable_glow;
+}
