@@ -1,0 +1,166 @@
+.tile {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  border: 3px solid transparent; }
+  .modal-dialog .tile {
+    margin: 0 !important; }
+  .tile.tile-default {
+    color: #7f8c8d;
+    background: #ffffff;
+    font-size: 1.2rem;
+    position: relative;
+    padding-top: 30px; }
+  .tile.tile-selectable:hover {
+    border: 3px solid #7f8c8d;
+    color: #7f8c8d; }
+  .tile > .tile-selected-indicator {
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem; }
+  .tile .input-group {
+    width: 100%;
+    padding: 20px; }
+    .tile .input-group .input-group-non-input {
+      position: relative;
+      float: left;
+      width: 100%;
+      display: table-cell;
+      height: 34px;
+      padding: 6px 12px;
+      font-size: 14px;
+      background-color: #ffffff;
+      border: 1px solid #CCC; }
+  .tile .btn.tile-button {
+    padding: 5px 10px;
+    color: #7f8c8d;
+    background: transparent;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem; }
+  .tile .btn.tile-delete-button {
+    position: absolute;
+    background: transparent;
+    font-size: 1.5rem;
+    font-weight: 300;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    padding: 8px 4px; }
+
+.top-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 1000;
+  background: #7f8c8d; }
+  .top-menu > .logo {
+    width: 300px;
+    height: 150px;
+    background-image: url(../../images/bucket.png); }
+
+.header {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  color: #7f8c8d;
+  background-color: #bdc3c7;
+  height: 50px;
+  line-height: 50px;
+  padding: 5px; }
+  .header > .header-text {
+    color: #7f8c8d;
+    border-bottom: 1px solid transparent; }
+    .header > .header-text:hover {
+      color: #7f8c8d;
+      cursor: pointer;
+      text-decoration: none;
+      border-bottom: 1px solid #7f8c8d; }
+    .header > .header-text:active, .header > .header-text:focus {
+      text-decoration: none; }
+
+.header-text {
+  margin-left: 20px;
+  height: 40px;
+  display: inline-block; }
+  .header-text.active {
+    border-bottom: 1px solid #7f8c8d;
+    cursor: pointer; }
+
+select:focus, textarea:focus,
+input[type]:focus {
+  box-shadow: none !important;
+  outline: 0 none !important;
+  border-color: #bdc3c7 !important; }
+
+.tile.tile-selectable, .header > .header-text:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+body {
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background: #bdc3c7; }
+
+.modal-content {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent; }
+
+.view-content-container {
+  margin-top: 150px; }
+
+.input-group-addon,
+.form-control,
+.modal-content,
+.btn {
+  border-radius: 0; }
+
+.ng-invalid {
+  border-color: #e74c3c; }
+
+.team-sizer {
+  margin: 20px;
+  width: 200px; }
+  .team-sizer > .input-group > .input-group-addon {
+    font-size: 1.3rem;
+    padding: 4px 8px; }
+  .team-sizer > .input-group > select {
+    font-size: 1.3rem;
+    padding-right: 6px !important; }
+
+.draft-container {
+  padding: 20px; }
+
+.round-heading {
+  width: 400px;
+  font-size: 1.5rem;
+  color: #7f8c8d;
+  border-bottom: 1px solid #7f8c8d; }
+
+.btn {
+  outline: none !important; }
+
+.nhl-team-logo-container {
+  padding: 6px 7px; }
+  .nhl-team-logo-container > .nhl-team-logo {
+    width: 24px;
+    height: 16px; }
+
+.truncate {
+  width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
