@@ -133,8 +133,13 @@ body {
 
 .team-sizer {
   margin: 20px;
-  font-size: 1.5rem;
   width: 200px; }
+  .team-sizer > .input-group > .input-group-addon {
+    font-size: 1.3rem;
+    padding: 4px 8px; }
+  .team-sizer > .input-group > select {
+    font-size: 1.3rem;
+    padding-right: 6px !important; }
 
 .draft-container {
   padding: 20px; }
@@ -159,6 +164,3 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
-
-select {
-  padding-right: 10px !important; }

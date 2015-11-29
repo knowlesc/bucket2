@@ -4,7 +4,7 @@ playersFactory.factory('playersFactory', function() {
     var playersFactory = {};
 
     // Array of players - {id, name, team}
-    playersFactory.players = [{id:999,name:'a',team:1},{id:998,name:'b',team:2}]
+    playersFactory.players = []
 
     // The id of the player that will be created next
     playersFactory.nextPlayerId = 0;

@@ -48,8 +48,18 @@ body {
 
 .team-sizer {
     margin: 20px;
-    font-size: 1.5rem;
     width: 200px;
+
+    > .input-group  {
+        > .input-group-addon {
+            font-size: 1.3rem;
+            padding: 4px 8px;
+        }
+        > select {
+            font-size: 1.3rem;
+            padding-right: 6px!important;
+        }
+    }
 }
 
 .draft-container {
@@ -84,7 +94,6 @@ body {
 }
 
 select {
-    padding-right: 10px!important;
     &:focus {
         @extend %extend_disable_glow;
     }
