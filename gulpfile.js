@@ -4,6 +4,7 @@ var gulp       = require('gulp'),
     sass       = require('gulp-ruby-sass'),
     concat     = require('gulp-concat'),
     sourcemaps = require('gulp-sourcemaps');
+    babel      = require('gulp-babel');
 
 gulp.task('default', ['watch']);
 
@@ -23,8 +24,11 @@ gulp.task('build-css', function() {
 gulp.task('build-js', function() {
     return gulp.src('src/javascript/**/*.js')
         .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: ['es2015']
+        }))
         .pipe(concat('bundle.js'))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('public/assets/javascript'));
 });
 
